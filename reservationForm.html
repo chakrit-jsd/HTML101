@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservatiuon Form</title>
+</head>
+<body>
+    <header>
+        <h1>Travel Reservation Form</h1>
+        <h3>* denotes mandotory</h3>
+    </header>
+    <br>
+    <br>
+    <form action="#" method="POST">
+        <label for="fullname">Full Name*:</label>
+        <br>
+        <input id="fullname" type="text" name="fullname" placeholder="FirstName LastName" maxlength="50" pattern="[A-Za-z]" required>
+        <br>
+        <br>
+        <label for="email">Email address*:</label>
+        <br>
+        <input id="email" type="email" name="email" placeholder="Email Adress" required>
+        <br>
+        <br>
+        <label for="tourpackage">Select Tour Package*:</label>
+        <select id="tourpackage" name="tourpackage" required>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+        </select>
+        <br>
+        <br>
+        <label for="arrivaldate">Arrival Date*:</label>
+        <br>
+        <input id="arrivaldate" type="date" name="arrivaldate" required>
+        <br>
+        <br>
+        <label for="numberofpersons">Number of Persons*:</label>
+        <br>
+        <input id="numberofpersons" type="number" name="numberpersons" max="8" min="1" value="1"required>
+        <br>
+        <div>
+            <p>What would you want to avail*:</p>
+            <label for="Boarding">Boarding</label>
+            <input id="Boarding" type="checkbox" name="boarding"> 
+            <br>
+            <label for="Fooding">Fooding</label>
+            <input id="Fooding" type="checkbox" name="fooding"> 
+            <br>
+            <label for="Sightseeing">Sight seeing</label>
+            <input id="Sightseeing" type="checkbox" name="sightseeing" checked> 
+        </div>
+        <br>
+        <label for="Coupon">Discout Coupon Code:</label>
+        <br>
+        <input id="Coupon" type="text" name="coupon" maxlength="5">
+        <br>
+        <div>
+            <p>Terms and Conditions*:</p>
+            <label for="agree">I Agree</label>
+            <input id="agree" type="radio" name="terms" value="agree" checked>
+            <label for="agree">I Disagree</label>
+            <input id="disagree" type="radio" name="terms" value="disagree">
+        </div>
+        <br>
+        <button type="button">Complete Reservation</button>
+    </form>
+</html>
